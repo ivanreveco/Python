@@ -1,6 +1,6 @@
 class Persona:
     def __init__(self ,nombre, apellido, edad):#inicializar
-        self._nombre = nombre#si el atributo cuenta con un _ no se debe aceder fuera del metodo self esto es solo una sugerencia al programador pero si cuenta con __ no se podra editar
+        self._nombre = nombre#si el atributo cuenta con un _ no se debe aceder directamente  esto es solo una sugerencia al programador pero si cuenta con __ no se podra editar
         self.apellido = apellido
         self.edad = edad
         
@@ -8,7 +8,8 @@ class Persona:
     @property #decorador para poder aceder al metodo como si fuera un atributo    
     def nombre(self):#metodo get
         return self._nombre
-        
+    
+    #si quitamos el metodo set no se podra modificar el valor del atributo
     @nombre.setter#decorador para metodo set
     def nombre(self,nombre):#metodo set 
         self._nombre=nombre
