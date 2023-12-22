@@ -1,0 +1,8 @@
+from Personas import *
+
+persona1 = Persona('juan',20)
+
+empleado1= Empleado('alisson',20,150000)
+print(persona1)
+print()
+print(empleado1)
