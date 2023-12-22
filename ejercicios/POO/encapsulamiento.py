@@ -32,8 +32,10 @@ class Persona:
         
     def mostrarDetalle(self):#metodo para imprimir el detalle de una persona
         print(f'Persona: {self._nombre} {self.apellido} {self.edad}')
-        
-if __name__ == '__main__':   
+    
+    def __del__(self):#metodo para borrar un objeto
+        print(f"eliminando persona: {self.nombre} {self.apellido} {self.edad}")
+if __name__ == '__main__':#para que no se ejecute este codigo en el archivo al que se importe    
     persona1 = Persona('juan','perez',19)#dar valores
     #persona1._nombre= 'juan carlos'#sugerencia para el desarrollador
     #persona1.__nombre= 'juan carlos'#no se puede editar fuera del metodo self
@@ -43,6 +45,6 @@ if __name__ == '__main__':
     persona1.apellido='perez'
     persona1.edad='30'
     persona1.mostrarDetalle()
-
+    del persona1# para borrar un objeto 
 
     print(__name__)
