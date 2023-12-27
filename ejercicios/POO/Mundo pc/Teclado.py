@@ -11,6 +11,6 @@ class Teclado(DispositivoEntrada):
     def __str__(self):
         return f'Id: {self._id_teclado},  Marca: {self._marca}, Tipo de entrada: {self._tipo_entrada}'
 
-
-teclado1= Teclado('pegasum','usb')
-print(teclado1)
+if __name__ == '__main__':
+    teclado1= Teclado('pegasum','usb')
+    print(teclado1)

@@ -9,6 +9,6 @@ class Monitor:
     
     def __str__(self):
         return f'ID: {self._id_monitor} Marca: {self._marca} Tamaño: {self._tamaño}'
-    
-monitor1=Monitor('lg',15)
-print(monitor1)
+if __name__ == '__main__':   
+    monitor1=Monitor('lg',15)
+    print(monitor1)
