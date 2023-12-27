@@ -14,16 +14,17 @@ class Computadora:
         self._teclado=teclado
         self._raton=raton
     
-    def __str__(self):
-        return f'''# 3 comillas para poder escribir en distinta lineas hacia abajo sin necesidad de usar el salto de linea de python(\ n)
+    def __str__(self):# 3 comillas para poder escribir en distinta lineas hacia abajo sin necesidad de usar el salto de linea de python(\n)
+        return f'''
         {self._nombre}: {self._id_computadora}
         monitor: {self._monitor}
         teclado: {self._teclado}
         raton: {self._raton}
         '''
-teclado1= Teclado('REDDRAGON', 'USB')     
-raton1= Raton('HP','USB')  
-monitor1=Monitor('LG',15)
-computadora1=Computadora('HP',monitor1,teclado1,raton1)
+if __name__ =='__main__':    
+    teclado1= Teclado('REDDRAGON', 'USB')     
+    raton1= Raton('HP','USB')  
+    monitor1=Monitor('LG',15)
+    computadora1=Computadora('HP',monitor1,teclado1,raton1)
 
-print(computadora1)
+    print(computadora1)
