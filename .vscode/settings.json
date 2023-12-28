@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./ejercicios/catalogopelicula/dominio",
+        "./ejercicios/catalogopelicula/servicio"
+    ]
+}
